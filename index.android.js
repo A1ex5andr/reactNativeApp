@@ -1,8 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- */
-
 import React, {
   AppRegistry,
   Component,
@@ -16,13 +11,14 @@ class reactNativeApp extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native!
+          REACT NATIVE
         </Text>
         <Text style={styles.instructions}>
-          To get started, edit index.android.js
+          redux - hotReloader - babel
         </Text>
         <Text style={styles.instructions}>
-          Shake or press menu button for dev menu
+          Template for iOS and Android,{'\n'}
+          development
         </Text>
       </View>
     );
@@ -34,18 +30,19 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: 'green'
   },
   welcome: {
     fontSize: 20,
     textAlign: 'center',
     margin: 10,
+    color: 'orange'
   },
   instructions: {
     textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+    color: '#fff',
+    marginBottom: 5
+  }
 });
 
 AppRegistry.registerComponent('reactNativeApp', () => reactNativeApp);
