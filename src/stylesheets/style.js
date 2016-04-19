@@ -33,26 +33,29 @@ const styles = StyleSheet.create({
     backgroundColor: "#f1f1f1",
     width: 300,
     flexDirection: 'column',
-    margin:4
+    margin:4,
+    borderRadius: 4,
+    borderWidth: 1,
+    borderColor: 'gray'
   },
   userName: {
     fontSize: 12,
     fontWeight: "800",
     alignSelf: "stretch",
-    padding: 4,
-    paddingBottom: 0
+    margin: 4,
+    marginBottom: 0,
   },
   userCompany: {
     fontSize: 12,
     fontWeight: "400",
-    padding: 4
+    margin: 4
   },
   userLink: {
     fontSize: 10,
     fontWeight: "400",
     position: 'absolute',
-    bottom: 0,
-    right: 0
+    bottom: 4,
+    right: 4
   }
 });
 

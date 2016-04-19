@@ -16,10 +16,8 @@ class UserList extends Component {
   renderUser(user) {
     return (
       <View key={user.id} style={styles.userCard}>
-
         <Text style={styles.userName}>Name: {user.name}</Text>
         <Text style={styles.userCompany}>Company: {user.company.name}</Text>
-        
         <Button style={styles.userLink}>{user.website}</Button>
       </View>
     )
