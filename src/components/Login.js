@@ -10,6 +10,7 @@ export default class extends React.Component {
         <Text style={styles.info}>Login page: {this.props.data}</Text>
 
         <Button onPress={()=>Actions.error("Info message")}>POPUP</Button>
+        <Button onPress={Actions.UserList}>User List</Button>
 
         <Button onPress={Actions.pop} style={styles.buttonBack}>Back</Button>
 

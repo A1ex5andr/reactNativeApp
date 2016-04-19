@@ -1,9 +1,14 @@
 import React, {AppRegistry, Navigator, StyleSheet, Text, View} from 'react-native'
 import {Scene, Reducer, Router, Switch, TabBar, Modal, Schema, Actions} from 'react-native-router-flux'
 
+import { createStore, applyMiddleware } from 'redux';
+import Async from './middlewares/async';
 import Launch from './components/Launch'
 import Login from './components/Login'
 import Error from './components/Error'
+import UserList from './components/UserList'
+
+const createStoreWithMiddleware = applyMiddleware(Async)(createStore);
 
 class TabIcon extends React.Component {
   render(){
@@ -46,6 +51,7 @@ export default class App extends React.Component {
           <Scene key="launch" component={Launch} title="Launch" initial={true} />
           <Scene key="login" direction="vertical"  >
             <Scene key="loginModal" component={Login} title="Login"/>
+            <Scene key="UserList" component={UserList} title="User List"/>
           </Scene>
         </Scene>
         <Scene key="error" component={Error}/>
