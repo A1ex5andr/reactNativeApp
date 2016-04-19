@@ -1,13 +1,5 @@
 import axios from 'axios';
-import {CHANGE_AUTH, FETCH_USERS} from './types.js';
-
-export function authenticate(isLoggedIn) {
-  console.log(isLoggedIn);
-  return {
-    type: CHANGE_AUTH,
-    payload: isLoggedIn
-  }
-}
+import {FETCH_USERS} from './types.js';
 
 export function fetchUsers() {
   const request = axios.get('http://jsonplaceholder.typicode.com/users');

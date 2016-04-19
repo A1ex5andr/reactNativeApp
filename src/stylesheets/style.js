@@ -28,6 +28,31 @@ const styles = StyleSheet.create({
   },
   buttonBack: {
     marginTop: 10,
+  },
+  userCard: {
+    backgroundColor: "#f1f1f1",
+    width: 300,
+    flexDirection: 'column',
+    margin:4
+  },
+  userName: {
+    fontSize: 12,
+    fontWeight: "800",
+    alignSelf: "stretch",
+    padding: 4,
+    paddingBottom: 0
+  },
+  userCompany: {
+    fontSize: 12,
+    fontWeight: "400",
+    padding: 4
+  },
+  userLink: {
+    fontSize: 10,
+    fontWeight: "400",
+    position: 'absolute',
+    bottom: 0,
+    right: 0
   }
 });
 
